@@ -1,0 +1,10 @@
+#getting image for Ubuntu
+#FROM SCRATCH <Empty image for building image>
+FROM ubuntu
+
+#optional
+MAINTAINER karthikeyan gnanavel <karthikgnanavel88@gmail.com>
+
+RUN apt-get update
+
+CMD ["echo", "Hello World...! From my first docker image"]

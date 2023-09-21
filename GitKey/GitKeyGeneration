@@ -1,0 +1,13 @@
+
+Creating RSA Key for Git Hub:
+
+ssh-keygen -t rsa -b 4096 -C "karthikgnanavel88@gmail.com"
+
+Evaluating the Key:
+eval $(ssh-agent -s)
+
+Adding the Key:
+ssh-add ~/.ssh/id_rsa
+
+Copying the Key to paste it in Profile:
+clip < ~/.ssh/id_rsa.pub
